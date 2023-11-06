@@ -32,11 +32,15 @@ dependencies {
   testImplementation(testFixtures(project(":app")))
 }
 
+tasks.test {
+  environment("APPLICATION", "project-luna-backend")
+}
+
 tasks {
   bootJar {
-    destinationDirectory.set(file("${rootProject.buildFile}/libs"))
+    destinationDirectory.set(file("${rootProject.buildDir}/libs"))
   }
   bootRun {
-    environment.putIfAbsent("APPLICATION", "fitness-projectluna")
+    environment.putIfAbsent("APPLICATION", "project-luna-backend")
   }
 }
