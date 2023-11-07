@@ -29,7 +29,7 @@ jobs:
         uses: DeepSourceCorp/test-coverage-action@v1.1.2
         with:
           key: java
-          coverage-file: ./build/reports/jacoco/test/jacocoTestReport.xml
+          coverage-file: ../build/reports/jacoco/test/jacocoTestReport.xml
           dsn: ${{ secrets.DEEP_SOURCE_DSN }}
           fail-ci-on-error: true
           commit-sha: ${{ github.event.pull_request.head.sha }}
