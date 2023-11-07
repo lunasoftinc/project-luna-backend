@@ -15,8 +15,8 @@ dependencies {
   implementation("io.github.microutils:kotlin-logging-jvm:2.0.10")
 
   // #### RESILIENCE
-  implementation("io.github.resilience4j:resilience4j-spring-boot2:2.0.0")
-  implementation("io.github.resilience4j:resilience4j-kotlin:2.0.0")
+  implementation("io.github.resilience4j:resilience4j-spring-boot2:2.1.0")
+  implementation("io.github.resilience4j:resilience4j-kotlin:2.1.0")
   runtimeOnly("org.aspectj:aspectjweaver:1.9.19")
   // ##
 
@@ -25,7 +25,7 @@ dependencies {
   testRuntimeOnly("io.r2dbc:r2dbc-h2")
 
   testImplementation("io.projectreactor:reactor-test")
-  testImplementation("org.springframework.cloud:spring-cloud-contract-wiremock:2.2.5.RELEASE")
+  testImplementation("org.springframework.cloud:spring-cloud-contract-wiremock:4.0.0")
 
   testImplementation(testFixtures(project(":domain")))
   testFixturesImplementation(testFixtures(project(":domain")))
@@ -39,6 +39,8 @@ tasks.test {
 tasks {
   bootJar {
     destinationDirectory.set(file("${rootProject.buildDir}/libs"))
+    archiveFileName.set("project-luna-backend.jar")
+    enabled = true
   }
   bootRun {
     environment.putIfAbsent("APPLICATION", "project-luna-backend")

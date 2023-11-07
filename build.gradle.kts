@@ -34,18 +34,23 @@ subprojects {
     implementation("org.springframework.boot:spring-boot-starter-web") {
       exclude(module = "spring-boot-starter-tomcat")
     }
-    implementation("io.projectreactor.kotlin:reactor-kotlin-extensions:1.1.6")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor:1.6.4")
+    implementation("io.projectreactor.kotlin:reactor-kotlin-extensions:1.2.2")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor:1.7.3")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("commons-collections:commons-collections:3.2.2")
-    implementation("commons-io:commons-io:2.11.0")
+    implementation("commons-io:commons-io:2.15.0")
     implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310")
-    implementation("org.jetbrains.kotlinx:kover-gradle-plugin:0.7.3")
+    implementation("org.jetbrains.kotlinx:kover-gradle-plugin:0.7.4")
+
+    implementation("jakarta.servlet:jakarta.servlet-api:6.0.0")
+    implementation("org.hibernate:hibernate-validator:8.0.1.Final")
+    implementation("org.apache.logging.log4j:log4j-core:2.14.1")
+    implementation("com.sun.mail:jakarta.mail:1.6.7")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
-    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.4")
-    testImplementation("io.mockk:mockk:1.13.3")
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3")
+    testImplementation("io.mockk:mockk:1.13.8")
   }
 
   tasks.withType<KotlinCompile> {
