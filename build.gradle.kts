@@ -44,7 +44,6 @@ subprojects {
     implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310")
     implementation("org.jetbrains.kotlinx:kover-gradle-plugin:0.7.4")
 
-    implementation("jakarta.servlet:jakarta.servlet-api:6.0.0")
     implementation("org.hibernate:hibernate-validator:8.0.1.Final")
     implementation("org.apache.logging.log4j:log4j-core:2.14.1")
     implementation("com.sun.mail:jakarta.mail:1.6.7")

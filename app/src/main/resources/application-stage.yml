@@ -1,0 +1,11 @@
+spring:
+  r2dbc:
+    url: r2dbc:postgresql://${DB_HOST_WSTG}:5432/pldbstg
+    username: ${DB_POSTGRES_WSTG_USERNAME}
+    password: ${DB_POSTGRES_WSTG_PASSWORD}
+    pool:
+      enabled: true
+      initial-size: 5
+      max-size: 5
+      max-idle-time: 5m
+      validation-depth: remote

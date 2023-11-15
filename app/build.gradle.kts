@@ -10,7 +10,7 @@ dependencies {
   implementation(project(":domain"))
   implementation("org.springframework.boot:spring-boot-starter-data-r2dbc")
   implementation("org.springframework.boot:spring-boot-starter-webflux")
-  implementation("io.r2dbc:r2dbc-postgresql:0.8.2.RELEASE")
+  implementation("io.r2dbc:r2dbc-postgresql:1.0.2.RELEASE")
   implementation("commons-beanutils:commons-beanutils:1.9.4")
   implementation("io.github.microutils:kotlin-logging-jvm:2.0.10")
 
