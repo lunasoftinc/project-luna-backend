@@ -2,4 +2,4 @@ spring:
   r2dbc:
     url: r2dbc:postgresql://localhost:5432/luna_db
     username: postgres
-    password: secret
+    password: postgres
