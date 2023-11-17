@@ -8,9 +8,6 @@ plugins {
   id("org.jetbrains.kotlinx.kover") version "0.7.3"
 }
 
-group = "com.fitness"
-version = "0.0.1-SNAPSHOT"
-
 java {
   sourceCompatibility = JavaVersion.VERSION_17
 }
