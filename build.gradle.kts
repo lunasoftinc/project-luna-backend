@@ -73,7 +73,8 @@ val excludeCoverage = listOf(
   "**/*\$logger\$*.class",
   "com.fitness.projectluna.ProjectLunaApplication.kt",
   "com.fitness.projectluna.ProjectLunaApplicationKt",
-  "com.fitness.projectluna.application.config.*"
+  "com.fitness.projectluna.application.config.*",
+  "com.fitness.projectluna.resource.repository.entity.*",
 )
 
 koverReport {
