@@ -23,8 +23,8 @@ dependencies {
   // ##
 
   implementation("org.apache.commons:commons-text:1.10.0")
-  testRuntimeOnly("com.h2database:h2")
-  testRuntimeOnly("io.r2dbc:r2dbc-h2")
+  testImplementation("com.h2database:h2")
+  testImplementation("io.r2dbc:r2dbc-h2")
 
   testImplementation("io.projectreactor:reactor-test")
   testImplementation("org.springframework.cloud:spring-cloud-contract-wiremock:4.0.0")

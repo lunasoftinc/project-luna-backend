@@ -6,7 +6,7 @@ interface TrainerRepositoryGateway {
 
   suspend fun create(trainer: Trainer): Trainer
 
-  suspend fun deleteTrainerById(trainerID: String)
+  suspend fun deleteTrainerById(trainerID: Long)
 
   suspend fun findTrainerByEmail(email: String, password: String): Trainer
 

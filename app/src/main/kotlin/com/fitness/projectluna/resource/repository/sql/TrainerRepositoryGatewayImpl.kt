@@ -23,7 +23,7 @@ class TrainerRepositoryGatewayImpl(
     } ?: trainerRepositorySpring.save(TrainerEntity(trainer, cryptography)).toDomain()
   }
 
-  override suspend fun deleteTrainerById(trainerID: String) {
+  override suspend fun deleteTrainerById(trainerID: Long) {
     return trainerRepositorySpring.deleteById(trainerID)
   }
 

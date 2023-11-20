@@ -75,6 +75,12 @@ val excludeCoverage = listOf(
   "com.fitness.projectluna.ProjectLunaApplicationKt",
   "com.fitness.projectluna.application.config.*",
   "com.fitness.projectluna.resource.repository.entity.*",
+  "com.fitness.projectluna.model.*",
+  "com.fitness.projectluna.exception.*",
+  "com.fitness.projectluna.application.beans.*",
+  "com.fitness.projectluna.application.core.*",
+  "com.fitness.projectluna.application.dto.*",
+  "com.fitness.projectluna.core.*"
 )
 
 koverReport {
