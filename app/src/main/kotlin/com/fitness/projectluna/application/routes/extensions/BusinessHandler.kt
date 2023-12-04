@@ -18,5 +18,6 @@ class BusinessHandler: TemplateHandler() {
 
   override fun getTypes(): Set<String> = setOf(
     TypeException.TRAINER_ALREADY_EXISTS.name,
+    TypeException.INVALID_PASSWORD.name
   )
 }
