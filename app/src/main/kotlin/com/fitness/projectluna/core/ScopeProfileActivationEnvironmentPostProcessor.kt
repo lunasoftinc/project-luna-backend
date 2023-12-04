@@ -10,7 +10,6 @@ class ScopeProfileActivationEnvironmentPostProcessor: EnvironmentPostProcessor, 
   override fun postProcessEnvironment(environment: ConfigurableEnvironment, application: SpringApplication) {
     environment["SCOPE"]?.also {
       val profile = it.split("-").last()
-      log.info("PEGAR O PROFILE ==> $profile")
       environment.addActiveProfile(profile)
     }
   }
