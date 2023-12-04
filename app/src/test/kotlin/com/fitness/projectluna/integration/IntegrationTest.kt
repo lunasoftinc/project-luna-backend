@@ -10,6 +10,7 @@ import org.springframework.cloud.contract.wiremock.AutoConfigureWireMock
 import org.springframework.core.io.ClassPathResource
 import org.springframework.data.r2dbc.core.R2dbcEntityTemplate
 import org.springframework.test.context.ActiveProfiles
+import org.springframework.test.web.reactive.server.WebTestClient
 
 @ActiveProfiles("test")
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
@@ -19,6 +20,9 @@ abstract class IntegrationTest {
 
   @Autowired
   lateinit var entityTemplate: R2dbcEntityTemplate
+
+  @Autowired
+  lateinit var webTestClient: WebTestClient
 
   @BeforeEach
   fun setupDatabase() {
